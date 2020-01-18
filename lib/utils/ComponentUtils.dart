@@ -14,4 +14,13 @@ class ComponentUtils {
       ),
     );
   }
+
+  static IconButton buildIconButton(IconData iconData, double iconSize, Function doOnPressed) {
+    return new IconButton(
+        icon: new Icon(
+            iconData
+        ),
+        iconSize: iconSize,
+        onPressed: doOnPressed);
+  }
 }
